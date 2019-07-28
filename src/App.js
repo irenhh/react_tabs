@@ -25,7 +25,7 @@ class App extends React.Component {
         <h1>{tabs.length} tabs</h1>
 
         <Tabs index={index}>
-          {this.state.tabs.map((tab, i) => (
+          {tabs.map((tab, i) => (
             <Tabs.Tab
               key={i}
               title={tab.title}
