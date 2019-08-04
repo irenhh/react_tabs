@@ -27,7 +27,7 @@ class App extends React.Component {
         <Tabs index={index}>
           {tabs.map((tab, i) => (
             <Tabs.Tab
-              key={i}
+              key={i + Date.now()}
               title={tab.title}
               onTabSelected={this.onTabSelected}
               arrIndex={i}

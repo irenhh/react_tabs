@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 const TabItem = ({
   title,
@@ -7,14 +8,15 @@ const TabItem = ({
   onTabSelected,
   arrIndex,
 }) => {
-  let className = 'App__tabs-name-item';
-
-  className += arrIndex === index ? ' tab-active' : '';
+  const tabClass = classNames({
+    'App__tabs-name-item': true,
+    'tab-active': arrIndex === index,
+  });
 
   return (
     <li
       onClick={() => onTabSelected(arrIndex)}
-      className={className}
+      className={tabClass}
     >
       {title}
     </li>
