@@ -1,1 +1,35 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.App__tabs-name {
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: 600;
+  color: #5f5e5e;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.App__tabs-name-item {
+  list-style: none;
+  margin-bottom: -1px;
+  display: inline-block;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.tab-active {
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+  border-radius: 5px 5px 0 0;
+  background: white;
+}
+
+.App__tabs-content {
+  border: solid #ccc;
+  border-width: 0 1px 1px 1px;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  font-size: 20px;
+}
